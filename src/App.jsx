@@ -1064,8 +1064,8 @@ export default function Youtube() {
           videoURL: `http://10.128.6.132:7000/${video.video_upload}`,
           poster: `http://10.128.6.132:7000/${video.Thumbnail}`,
           profileImage: `http://10.128.6.132:7000/${video.Icon}`,
-          category: video.Category, 
-          image: Dots,
+          category: video.Category, //fetching the category to filter particular video
+          image: Dots, //just the three dots in video card
         }));
 
         setData(videos);
