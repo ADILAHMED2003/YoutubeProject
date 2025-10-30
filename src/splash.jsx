@@ -10,7 +10,7 @@ export default function Splash() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => setLoading(false), 3000); // show splash 2s
+        const timer = setTimeout(() => setLoading(false), 3000); 
         return () => clearTimeout(timer);
     }, []);
 
@@ -19,7 +19,7 @@ export default function Splash() {
             {loading ? (
                 <div className="splash-screen">
                     <img src={YoutubeLogo} alt="Logo" className="logo" />
-                    <p className="welcome-text">Welcome To Youtube <br/> An Video Platform</p>
+                    <p className="welcome-text">Youtube An Video Platform</p>
                 </div>
             ) : (
                 <RouteArea />
