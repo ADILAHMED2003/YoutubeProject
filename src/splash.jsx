@@ -19,7 +19,7 @@ export default function Splash() {
             {loading ? (
                 <div className="splash-screen">
                     <img src={YoutubeLogo} alt="Logo" className="logo" />
-                    <p className="welcome-text">Welcome To Youtube</p>
+                    <p className="welcome-text">Welcome To Youtube <br/> An Video Platform</p>
                 </div>
             ) : (
                 <RouteArea />
