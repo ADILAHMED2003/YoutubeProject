@@ -1064,7 +1064,7 @@ export default function Youtube() {
           videoURL: `http://10.128.6.132:7000/${video.video_upload}`,
           poster: `http://10.128.6.132:7000/${video.Thumbnail}`,
           profileImage: `http://10.128.6.132:7000/${video.Icon}`,
-          category: video.Category, // ✅ very important
+          category: video.Category, 
           image: Dots,
         }));
 
