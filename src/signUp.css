@@ -1,0 +1,166 @@
+.topParentSignup {
+
+    width: 100vw;
+    /* full width of viewport */
+    height: 100vh;
+    /* full height of viewport */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.signUpParent {
+    display: flex;
+    flex-direction: column;
+    border: 3.5px inset rgb(145 130 130);
+    /* margin: 0px 0px 0px 560px; */
+    align-items: center;
+    background-color: rgb(48 48 48 / 50%);
+    /* background-color: rgb(125, 96, 96); */
+    /* padding: 10px 10px 10px 10px ; */
+    padding: 30px 50px 30px 50px;
+    box-shadow: 3px 3px 7px indianred;
+    gap: 28px;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    /* margin-left: 56px; */
+    margin-left: 26px;
+}
+
+.name input {
+    height: 28px;
+    width: 200px;
+}
+
+
+.email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 60px;
+    gap: 10px;
+}
+
+.email input {
+    height: 28px;
+    width: 200px;
+}
+
+
+.password {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 28px;
+
+}
+
+.password input {
+    height: 28px;
+    width: 200px;
+}
+
+
+.age {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 71px;
+
+}
+
+.age input {
+    height: 28px;
+    width: 200px;
+}
+
+
+
+.cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 71px;
+
+}
+
+.cell input {
+    height: 28px;
+    width: 200px;
+}
+
+
+.gender {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 8px;
+
+}
+
+/* .gender input {
+    height: 14px;
+    width: 200px;
+} */
+
+.sign {
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a71c1c;
+
+}
+
+
+.signYoutubeandImg {
+
+    display: flex;
+    gap: 10px;
+}
+
+.signYoutubeandImg h1 {
+
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 35px;
+
+}
+
+.signYoutubeandImg img {
+
+
+    height: 50px;
+    width: 50px;
+}
+
+.account {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.account p {
+
+    cursor: pointer;
+    color: rgb(59, 59, 164);
+    font-size: 16px;
+    border-bottom: 2px solid rgb(59, 59, 164);
+    ;
+}

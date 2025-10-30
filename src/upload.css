@@ -1,0 +1,559 @@
+.topParent {
+
+    display: flex;
+    /* flex-direction: column; */
+    /* border: 2px solid white; */
+    /* margin: 0px 0px 0px 323px; */
+    margin: 10px 0px 10px 360px;
+    gap: 90px;
+    border: 1.5px dashed grey;
+    padding: 15px 15px;
+    background-color: rgb(48 48 48 / 50%);
+    /* max-height: 100vh; */
+
+}
+
+.uploadingInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* border: 2px solid white ; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+/* .titleAndDescription{
+
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+} */
+
+/* .uploadingInputs h2{
+
+    margin: 0 auto;
+
+} */
+
+/* .detail { */
+
+/* display: flex; */
+/* flex-direction: column; */
+/* gap: 10px; */
+/* border: 2px solid white; */
+/* align-items: flex-start; */
+/* } */
+
+
+/* .detail h4 {
+    margin: 0 auto;
+
+} */
+
+.detail p {
+    margin: 0 auto;
+
+}
+
+.detail textarea {
+
+    background-color: #333333;
+    border: 1px solid #111010;
+    border-radius: 8px;
+    transition: border 0.4s;
+    padding: 4px;
+
+}
+
+.detail textarea:hover {
+
+    border: 1px solid #da1616;
+
+}
+
+.detail input {
+
+    height: 30px;
+}
+
+.detail input:hover {
+
+    border: 1px solid #da1616;
+}
+
+
+.iconInput {
+    padding: 8px 5px;
+    border: 2px dashed #333;
+    border-radius: 8px;
+    transition: border 0.3s;
+}
+
+.iconInput:hover {
+
+    border: 2px dashed #da1616;
+    cursor: pointer;
+
+}
+
+
+.thumbnail h4 {
+    margin: 0 auto;
+}
+
+.thumbnail p {
+    /* border: 2px solid white; */
+    margin: 0 auto;
+
+
+}
+
+.thumbnail input {
+    padding: 8px 5px;
+    border: 2px dashed #333;
+    border-radius: 8px;
+    transition: border 0.3s;
+
+
+}
+
+.thumbnail input:hover {
+
+    border: 2px dashed #da1616;
+    cursor: pointer;
+
+}
+
+.category h4 {
+    margin: 0 auto;
+}
+
+.category p {
+    margin: 0 auto;
+}
+
+.category select {
+    width: 64%;
+    min-height: 32px;
+    padding: 10px;
+    /* font-size: 16px; */
+    border-radius: 4px;
+    /* border: 1px solid #ccc; */
+    /* box-sizing: border-box; */
+}
+
+.videoUpload {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.videoUpload input {
+    padding: 8px 5px;
+    border: 2px dashed #333;
+    border-radius: 8px;
+    transition: border 0.3s;
+}
+
+.videoUpload input:hover {
+    border: 2px dashed #da1616;
+    cursor: pointer;
+}
+
+
+.videoUpload button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 41px;
+    width: 120px;
+    cursor: pointer;
+    background: #ec0b0b;
+    margin-top: 10px;
+    transition: background 0.4s ease;
+    /* transition: border 0.3s ease; */
+
+
+}
+
+.videoUpload button:hover {
+
+    background: #990000;
+    /* border: 2px solid white; */
+
+
+}
+
+
+.profile h4 {
+    /* border: 2px solid white; */
+    margin: 0 auto;
+
+}
+
+@media (max-width: 1200px) {
+    .topParent {
+        margin-left: 250px;
+        gap: 60px;
+
+    }
+
+    .category select {
+        width: 70%;
+        min-height: 36px;
+    }
+}
+
+/* For 1024px view */
+@media (max-width: 1024px) {
+    .topParent {
+        margin-left: 180px;
+        gap: 40px;
+        flex-direction: column;
+        /* stack inputs vertically */
+    }
+
+    .category select {
+        width: 100%;
+        min-height: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topParent {
+        margin: 20px;
+        gap: 40px;
+        flex-direction: column;
+        /* margin-left: 180px; */
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    .uploadingInputs {
+        width: 100%;
+        max-width: 600px;
+        gap: 25px;
+    }
+
+    .detail textarea {
+        width: 100%;
+        max-width: 500px;
+        box-sizing: border-box;
+    }
+
+    .videoUpload {
+        width: 100%;
+        max-width: 400px;
+        align-items: center;
+    }
+
+    .videoUpload button {
+        width: 150px;
+        height: 45px;
+    }
+}
+
+/* Mobile styles (480px and below) */
+@media screen and (max-width: 480px) {
+    .topParent {
+        margin: 10px;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0px;
+        /* Space for fixed header */
+    }
+
+    .uploadingInputs {
+        width: 100%;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    /* Details section */
+    .detail {
+        width: 100%;
+    }
+
+    .detail h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .detail p {
+        font-size: 14px;
+        margin: 10px 0 5px 0;
+        text-align: left;
+    }
+
+    .detail textarea {
+        width: 100%;
+        max-width: none;
+        font-size: 16px;
+        /* Prevents zoom on iOS */
+        padding: 12px;
+        border: 1px solid #333;
+        border-radius: 8px;
+        background-color: #1c1c1c;
+        color: white;
+        resize: vertical;
+        box-sizing: border-box;
+    }
+
+    .detail textarea::placeholder {
+        color: #aaa;
+    }
+
+    .detail input {
+        width: 100%;
+        height: 44px;
+        font-size: 16px;
+        padding: 12px;
+        border: 1px solid #333;
+        border-radius: 8px;
+        background-color: #1c1c1c;
+        color: white;
+        box-sizing: border-box;
+    }
+
+    .detail input::placeholder {
+        color: #aaa;
+    }
+
+    /* Thumbnail section */
+    .thumbnail {
+        width: 100%;
+    }
+
+    .thumbnail h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .thumbnail p {
+        font-size: 14px;
+        margin: 0 0 15px 0;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .thumbnail input[type="file"] {
+        width: 100%;
+        height: 51px;
+        padding: 8px;
+        border: 2px dashed #333;
+        border-radius: 8px;
+        background-color: #1c1c1c;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+
+    /* Category section */
+    .category {
+        width: 100%;
+    }
+
+    .category h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .category p {
+        font-size: 14px;
+        margin: 0 0 15px 0;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .category select {
+        width: 100%;
+        height: 44px;
+        font-size: 16px;
+        padding: 12px;
+        border: 1px solid #333;
+        border-radius: 8px;
+        background-color: #1c1c1c;
+        color: white;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+
+    .category option {
+        background-color: #1c1c1c;
+        color: white;
+    }
+
+    /* Video upload section */
+    .videoUpload {
+        width: 100%;
+        max-width: 350px;
+        gap: 9px;
+        padding: 0 15px;
+        align-items: center;
+    }
+
+    .videoUpload h4 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .videoUpload input[type="file"] {
+        width: 100%;
+        height: 80px;
+        padding: 20px;
+        border: 2px dashed #333;
+        border-radius: 12px;
+        background-color: #1c1c1c;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .videoUpload button {
+        width: 100%;
+        max-width: 200px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #ff0000;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .videoUpload button:hover {
+        background-color: #cc0000;
+    }
+
+    .videoUpload button:active {
+        background-color: #990000;
+    }
+}
+
+/* Extra small mobile (360px and below) */
+@media screen and (max-width: 360px) {
+    .topParent {
+        margin: 5px;
+        gap: 25px;
+        padding-top: 70px;
+    }
+
+    .uploadingInputs {
+        padding: 0 10px;
+        gap: 18px;
+    }
+
+    .detail h4,
+    .thumbnail h4,
+    .category h4,
+    .videoUpload h4 {
+        font-size: 16px;
+    }
+
+    .detail p,
+    .thumbnail p,
+    .category p {
+        font-size: 13px;
+    }
+
+    .detail textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .detail input,
+    .category select {
+        height: 40px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .videoUpload input[type="file"] {
+        height: 70px;
+        padding: 15px;
+        font-size: 13px;
+    }
+
+    .videoUpload button {
+        height: 46px;
+        font-size: 15px;
+    }
+
+    .videoUpload {
+        padding: 0 10px;
+    }
+}
+
+/* Landscape orientation for mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .topParent {
+        padding-top: 0px;
+        gap: 20px;
+    }
+
+    .uploadingInputs {
+        gap: 15px;
+    }
+
+    .detail textarea[rows="6"] {
+        /* rows: 3; */
+        min-height: 80px;
+    }
+
+    .detail textarea[rows="10"] {
+        /* rows: 5; */
+        min-height: 120px;
+    }
+}
+
+/* Focus styles for better accessibility */
+@media screen and (max-width: 480px) {
+
+    .detail textarea:focus,
+    .detail input:focus,
+    .category select:focus,
+    .videoUpload input[type="file"]:focus {
+        outline: 2px solid #ff0000;
+        outline-offset: 2px;
+    }
+
+    .videoUpload button:focus {
+        outline: 2px solid #ffffff;
+        outline-offset: 2px;
+    }
+}
+
+/* File input styling improvements */
+@media screen and (max-width: 480px) {
+
+    .thumbnail input[type="file"]::-webkit-file-upload-button,
+    .videoUpload input[type="file"]::-webkit-file-upload-button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .thumbnail input[type="file"]::-webkit-file-upload-button:hover,
+    .videoUpload input[type="file"]::-webkit-file-upload-button:hover {
+        background-color: #555;
+    }
+}

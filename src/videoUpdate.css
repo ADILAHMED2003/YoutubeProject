@@ -1,0 +1,467 @@
+/* General Page Styles */
+.video-update-page {
+    min-height: 100vh;
+    background-color: #0f0f0f;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.align_parent {
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+}
+
+/* Header */
+.header {
+    border-bottom: 1px solid #222;
+    padding: 20px;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-inner h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.save-btn {
+    background-color: #2563eb;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.save-btn:hover {
+    background-color: #1e40af;
+}
+
+.save-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Main */
+.main-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Sections */
+.form-section {
+    background-color: #181818;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 24px;
+    margin-top: 30px;
+    width: 28vw;
+    /* height: 28vh; */
+
+}
+
+.form-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+.form-section label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+    width: 100%;
+    background-color: #202020;
+    border: 1px solid #333;
+    color: white;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.form-section input:focus,
+.form-section textarea:focus,
+.form-section select:focus {
+    border-color: #2563eb;
+}
+
+.form-section textarea {
+    resize: none;
+}
+
+.required {
+    color: red;
+}
+
+.note {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+/* Upload Boxes */
+.upload-box,
+.upload-circle {
+    border: 2px dashed #333;
+    color: #aaa;
+    border-radius: 8px;
+    text-align: center;
+    padding: 30px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.upload-box:hover,
+.upload-circle:hover {
+    border-color: #2563eb;
+}
+
+.upload-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 6px;
+}
+
+.file-info {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+/* Image Previews */
+.preview-container {
+    position: relative;
+    max-width: 400px;
+}
+
+.preview-container img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #333;
+}
+
+.icon-preview {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin: auto;
+}
+
+.icon-preview img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+/* Remove Buttons */
+.remove-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #dc2626;
+    border: none;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: #b91c1c;
+}
+
+.remove-btn.small {
+    top: -6px;
+    right: -6px;
+    padding: 5px;
+}
+
+/* Hidden Input */
+.hidden-input {
+    display: none;
+}
+
+/* Responsive Media Queries - Add these to your existing CSS */
+
+/* Desktop View - Increase Width */
+@media (min-width: 1025px) {
+    .form-section {
+        width: 45vw;
+        max-width: 800px;
+    }
+}
+
+/* Large Desktop View */
+@media (min-width: 1440px) {
+    .form-section {
+        width: 35vw;
+        max-width: 900px;
+    }
+}
+
+/* Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+    .header-inner h1 {
+        font-size: 1.4rem;
+    }
+
+    .main-content {
+        max-width: 90%;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .form-section {
+        width: 60vw;
+    }
+}
+
+/* Mobile Landscape / Small Tablet (600px - 768px) */
+@media (max-width: 768px) {
+    .header {
+        padding: 16px;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    .header-inner h1 {
+        font-size: 1.3rem;
+    }
+
+    .save-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 24px;
+    }
+
+    .main-content {
+        max-width: 100%;
+        padding: 24px 16px;
+        gap: 24px;
+    }
+
+    .form-section {
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .form-section h2 {
+        font-size: 1.1rem;
+    }
+
+    .preview-container {
+        max-width: 100%;
+    }
+
+    .upload-circle {
+        width: 110px;
+        height: 110px;
+    }
+
+    .icon-preview {
+        width: 110px;
+        height: 110px;
+    }
+
+    .upload-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Mobile Portrait (up to 600px) */
+@media (max-width: 600px) {
+    .header {
+        padding: 12px;
+    }
+
+    .header-inner h1 {
+        font-size: 1.2rem;
+    }
+
+    .save-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .main-content {
+        padding: 20px 12px;
+        gap: 20px;
+    }
+
+    .form-section {
+        padding: 16px;
+        margin-top: 16px;
+        border-radius: 8px;
+    }
+
+    .form-section h2 {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .form-section label {
+        font-size: 0.85rem;
+        margin-bottom: 4px;
+    }
+
+    .form-section input,
+    .form-section select,
+    .form-section textarea {
+        padding: 9px 12px;
+        margin-bottom: 16px;
+        font-size: 0.9rem;
+    }
+
+    .note {
+        font-size: 0.8rem;
+        margin-bottom: 16px;
+    }
+
+    .upload-box {
+        padding: 24px 16px;
+    }
+
+    .upload-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon-preview {
+        width: 100px;
+        height: 100px;
+    }
+
+    .upload-icon {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 4px;
+    }
+
+    .upload-box p,
+    .upload-circle p {
+        font-size: 0.85rem;
+    }
+
+    .file-info {
+        font-size: 0.7rem;
+    }
+
+    .remove-btn {
+        padding: 5px;
+    }
+
+    .remove-btn.small {
+        padding: 4px;
+    }
+}
+
+/* Extra Small Mobile (up to 400px) */
+@media (max-width: 400px) {
+    .header-inner h1 {
+        font-size: 1.1rem;
+    }
+
+    .save-btn {
+        padding: 9px 16px;
+        font-size: 0.85rem;
+    }
+
+    .main-content {
+        padding: 16px 10px;
+    }
+
+    .form-section {
+        padding: 14px;
+    }
+
+    .form-section h2 {
+        font-size: 0.95rem;
+    }
+
+    .form-section input,
+    .form-section select,
+    .form-section textarea {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+
+    .upload-circle {
+        width: 90px;
+        height: 90px;
+    }
+
+    .icon-preview {
+        width: 90px;
+        height: 90px;
+    }
+
+    .upload-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Landscape Orientation Fix for Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .main-content {
+        padding: 16px;
+    }
+
+    .form-section {
+        margin-top: 12px;
+    }
+
+    .upload-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icon-preview {
+        width: 80px;
+        height: 80px;
+    }
+}
