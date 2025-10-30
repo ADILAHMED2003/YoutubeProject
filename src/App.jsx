@@ -1061,7 +1061,7 @@ export default function Youtube() {
           description: video.Description,
           author: video.Updated_By,
           time: new Date(video.created_on).toLocaleDateString(),
-          videoURL: `http://10.128.6.132:7000/${video.video_upload}`,  //url is because we have to fetch the video from backend
+          videoURL: `http://10.128.6.132:7000/${video.video_upload}`, 
           poster: `http://10.128.6.132:7000/${video.Thumbnail}`,
           profileImage: `http://10.128.6.132:7000/${video.Icon}`,
           category: video.Category, //fetching the category to filter particular video
